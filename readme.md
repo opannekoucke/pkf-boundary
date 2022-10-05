@@ -22,7 +22,7 @@ This work has been supported by the French INSU-LEFE, grant MPKF (multivariate P
 
 
 
-[Valiation a PKF forecast for an advection by a heterogeneous wind on a bounded domain](./notebooks/article-boundary-pkf-advection.ipynb)
+[Validation of PKF forecast for an advection by a heterogeneous wind on a bounded domain](./notebooks/article-boundary-pkf-advection.ipynb)
 ---------------------
 
 This notebook shows the ability of the PKF to predict the uncertainty dynamics for the advection on a bounded domain, with Dirichlet boundary at $x=0$ and open condition at $x=L$. 
