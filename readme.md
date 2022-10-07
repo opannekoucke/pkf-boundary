@@ -33,7 +33,7 @@ To do so, an ensemble of spatio-temporal forcing have been generated as the samp
 
 
 <figure align="center">
-  <img src="./figures/dirichlet-initial-error-samples-wide.png" width="500" />
+  <img src="./figures/dirichlet-initial-error-samples-wide.png" width="500" align="center" />
   <figcaption>Fig.~1: Sample of spatio-temporal error generated to validate the PKF with an ensemble estimation</figcaption>
 </figure>
 
