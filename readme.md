@@ -22,7 +22,7 @@ This work has been supported by the French INSU-LEFE, grant MPKF (multivariate P
 
 
 
-[Validation of PKF forecast for an advection by a heterogeneous wind on a bounded domain](./notebooks/article-boundary-pkf-advection.ipynb)
+[Validation of a PKF forecast for an advection by a heterogeneous wind on a bounded domain](./notebooks/article-boundary-pkf-advection.ipynb)
 ---------------------
 
 This notebook shows the ability of the PKF to predict the uncertainty dynamics for the advection on a bounded domain, with Dirichlet boundary at $x=0$ and open condition at $x=L$. 
@@ -44,7 +44,7 @@ For the validation, a forecast experiment (see Fig.~3) has been performed that s
   <figcaption>Fig.~2: Dynamics of the variance (left column) and of the correlation length-scale (right column) at different times, validating the PKF (orange) by comparison with the ensemble estimation of reference (blue) computed from a large ensemble (6400 members) </figcaption>
 </figure>
 
-[Valiation a PKF forecast for the heterogeneous diffusion equation on a bounded domain : Dirichlet boundary conditions](./notebooks/article-boundary-pkf-diffusion-dirichlet.ipynb)
+[Valiation of a PKF forecast for the heterogeneous diffusion equation on a bounded domain : Dirichlet boundary conditions](./notebooks/article-boundary-pkf-diffusion-dirichlet.ipynb)
 ---------------------
 
 This notebook shows the ability of the PKF to predict the uncertainty dynamics for the heterogeneous diffusion equation on a bounded domain, with Dirichlet boundary at $x=0$ and $x=L$. 
@@ -57,7 +57,7 @@ To validate the PKF, an ensemble estimation has been computed to provide a refer
   <figcaption>Fig.~3: Dynamics of the variance (left column) and of the correlation length-scale (right column) for an heterogeneous diffusion equation with Dirichet conditions (red dots). The experiment validates the PKF (orange) by comparison with the ensemble estimation of reference (blue) computed from a large ensemble (6400 members) </figcaption>
 </figure>
 
-[Valiation a PKF forecast for the heterogeneous diffusion equation on a bounded domain : Neumann boundary conditions](./notebooks/article-boundary-pkf-diffusion-neumann.ipynb)
+[Valiation of a PKF forecast for the heterogeneous diffusion equation on a bounded domain : Neumann boundary conditions](./notebooks/article-boundary-pkf-diffusion-neumann.ipynb)
 ---------------------
 
 In this notebook, the heterogeneous diffusion equation is considered one more time but with Neumann boundary conditions.
