@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This work is a contribution to the exploration of the parametric Kalman filter (PKF), which is an approximation of the Kalman filter, where the error covariance are approximated by covariance model. Here we focus on the covariance model parameterized from the variance and the anisotropy of the local correlations, and whose parameters dynamics provides a proxy for the full error-covariance dynamics. For this covariance mode, we aims to provide the boundary condition to specify in the prediction of PKF for bounded domains, focusing on Dirichlet and Neumann conditions when they are prescribed for the physical dynamics. An ensemble validation is proposed for the transport equation and for the heterogeneous diffusion equations over a bounded 1D domain. This ensemble validation requires to specify the auto-correlation time-scale needed to populate boundary perturbation that leads to prescribed uncertainty characteristics. The numerical simulations show that the PKF is able to reproduce the uncertainty diagnosed from the ensemble of forecast appropriately perturbed on the boundaries, which show the ability of the PKF to handle boundaries in the prediction of the uncertainties. It results that Dirichlet condition on the physical dynamics implies Dirichlet condition on the variance and on the anisotropy.
+This work is a contribution to the exploration of the parametric Kalman filter (PKF), which is an approximation of the Kalman filter, where the error covariance are approximated by covariance model. Here we focus on the covariance model parameterized from the variance and the anisotropy of the local correlations, and whose parameters dynamics provide a proxy for the full error-covariance dynamics. For this covariance mode, we aim to provide the boundary condition to specify in the prediction of PKF for bounded domains, focusing on Dirichlet and Neumann conditions when they are prescribed for the physical dynamics. An ensemble validation is proposed for the transport equation and for the heterogeneous diffusion equation over a bounded 1D domain. This ensemble validation requires to specify the auto-correlation time-scale needed to populate boundary perturbation that leads to prescribed uncertainty characteristics. The numerical simulations show that the PKF is able to reproduce the uncertainty diagnosed from the ensemble of forecast appropriately perturbed on the boundaries, which show the ability of the PKF to handle boundaries in the prediction of the uncertainties. It results that Dirichlet condition on the physical dynamics implies Dirichlet condition on the variance and on the anisotropy.
 
 This repository provides the numerical codes used for the article
 
@@ -29,7 +29,7 @@ This notebook shows the ability of the PKF to predict the uncertainty dynamics f
 
 To validate the PKF, an ensemble estimation has been computed to provide a reference. 
 
-To do so, an ensemble of spatio-temporal forcing have been generated as the sample shown in Fig.~2. 
+To do so, an ensemble of spatio-temporal forcing have been generated as the sample shown in Fig.~1. 
 
 
 <figure align="center">
@@ -37,14 +37,14 @@ To do so, an ensemble of spatio-temporal forcing have been generated as the samp
   <figcaption>Fig.~1: Sample of spatio-temporal error generated to validate the PKF with an ensemble estimation</figcaption>
 </figure>
 
-For the validation, a forecast experiment (see Fig.~3) has been performed that shows the ability of the PKF (in orange) to reproduce the ensemble estimation from a very large ensemble size (6400) (in blue). To provide an idea of the efficiency of the PKF approach, it is interesting to note that  the numerical cost of the PKF prediction is thereabout the cost of the computation of three members of the ensemble.
+For the validation, a forecast experiment (see Fig.~2) has been performed that shows the ability of the PKF (in orange) to reproduce the ensemble estimation from a very large ensemble size (6400) (in blue). To provide an idea of the efficiency of the PKF approach, it is interesting to note that  the numerical cost of the PKF prediction is thereabout the cost of the computation of three members of the ensemble.
 
 <figure align="center">
   <img src="./figures/PKF-heterogeneous-advection-dirichlet-time-comparison.png" width="500" />
   <figcaption>Fig.~2: Dynamics of the variance (left column) and of the correlation length-scale (right column) at different times, validating the PKF (orange) by comparison with the ensemble estimation of reference (blue) computed from a large ensemble (6400 members) </figcaption>
 </figure>
 
-[Valiation of a PKF forecast for the heterogeneous diffusion equation on a bounded domain : Dirichlet boundary conditions](./notebooks/article-boundary-pkf-diffusion-dirichlet.ipynb)
+[Validation of a PKF forecast for the heterogeneous diffusion equation on a bounded domain : Dirichlet boundary conditions](./notebooks/article-boundary-pkf-diffusion-dirichlet.ipynb)
 ---------------------
 
 This notebook shows the ability of the PKF to predict the uncertainty dynamics for the heterogeneous diffusion equation on a bounded domain, with Dirichlet boundary at $x=0$ and $x=L$. 
@@ -57,7 +57,7 @@ To validate the PKF, an ensemble estimation has been computed to provide a refer
   <figcaption>Fig.~3: Dynamics of the variance (left column) and of the correlation length-scale (right column) for an heterogeneous diffusion equation with Dirichet conditions (red dots). The experiment validates the PKF (orange) by comparison with the ensemble estimation of reference (blue) computed from a large ensemble (6400 members) </figcaption>
 </figure>
 
-[Valiation of a PKF forecast for the heterogeneous diffusion equation on a bounded domain : Neumann boundary conditions](./notebooks/article-boundary-pkf-diffusion-neumann.ipynb)
+[Validation of a PKF forecast for the heterogeneous diffusion equation on a bounded domain : Neumann boundary conditions](./notebooks/article-boundary-pkf-diffusion-neumann.ipynb)
 ---------------------
 
 In this notebook, the heterogeneous diffusion equation is considered one more time but with Neumann boundary conditions.
