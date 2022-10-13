@@ -7,7 +7,7 @@ This work is a contribution to the exploration of the parametric Kalman filter (
 
 This repository provides the numerical codes used for the article
 
-***M. Sabathier, O. Pannekoucke, and V. Maget, “Boundary Conditions for the Parametric Kalman Filter forecast,” 2022.***
+***M. Sabathier, O. Pannekoucke, V. Maget and N. Dahmen “Boundary Conditions for the Parametric Kalman Filter forecast,” 2022.***
 
 
 
